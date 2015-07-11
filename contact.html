@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ashu Steel | About</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href="fonts/glyphicons-halflings-regular.ttf" >
+
+    <!-- Custom styles for this template -->
+    <link href="css/stylefile.css" rel="stylesheet">
+  </head>
+
+  <body style="background:url(img/homepageTexture.jpg) repeat">
+    <div class="container-fluid">
+	  <div class="row" id="top-bar">
+	    <div class="col-sm-8">
+		  <h2><a href="index.html">
+		   <span class="glyphicon glyphicon-link"></span>&nbsp;<font style="color:#3071a9">ASHU</font> <font style="color:#3c763d">STEEL</font>
+		  </a></h2>
+		</div>
+		<div class="col-sm-4">
+		  <p class="pull-right" style="padding-right:20px;"><span class="glyphicon glyphicon-earphone"></span>&nbsp;<a href="contact.html">Contact Us</a></p>
+		</div>
+	  </div><!-- ./top-bar -->
+	  <div style="width:100%; height:3px; background:url(img/TopThinLine.png) repeat-x; margin:18px 0;"></div>
+	  <div class="row" id="menu-bar">
+	    <div class="col-sm-3"><a href="almirah.html" class="btn btn-success">ALMIRAH</a></div>
+		<div class="col-sm-3"><a href="officefurniture.html" class="btn btn-primary">OFFICE FURNITURE</a></div>
+		<div class="col-sm-3"><a href="woodenfurniture.html" class="btn btn-info">WOODEN FURNITURE</a></div>
+		<div class="col-sm-3"><a href="coolers.html" class="btn btn-danger">COOLERS</a></div>
+	  </div>
+	  <div style="width:100%; height:3px; background:url(img/TopThinLine.png) repeat-x; margin:18px 0;"></div>
+	  
+	  <div class="row">
+	   <div class="col-sm-6" style="text-align:center;">
+	    <h2 class="text-success">Main Office</h2>
+		<p style="font-weight:bold">ASHU STEEL INDUSTRIES<br>
+		Plot no. 25, Shiv Colony, oppossite sctor-03, Near sector 3 petrol pump<br>
+		Pin- 121004, Phone  0129-2246721</p>
+	   </div>
+	   <div class="col-sm-4" id="map-container" style="height:200px;">
+	   </div>
+	   <div class="2"></div>
+	  </div>
+	  <hr class="divider">
+	  <div class="row">
+	   <div class="col-sm-6 col-sm-offset-3" style="text-align:center; margin-top:20px;">
+	   <h3 class="text-primary">Other Branch</h3>
+	   <p style="font-weight:500">ASHU STEEL INDUSTRIES<br>
+		Plot No.- 11 and 12, Chawala colony, Pathwari mandir road, near panchayat bhawan,<br>
+		opposite peer baba, Pin-121004<br>
+		Phone  0129 -2210413</p>
+		</div>
+	   </div>
+	   
+	   <hr class="divider">
+	  <div class="row">
+	   <div class="col-sm-6 col-sm-offset-3" style="text-align:center; margin-top:20px; margin-bottom:30px;">
+	   <h3 class="text-danger">Factory</h3>
+	   <p style="font-weight:500">ASHU STEEL INDUSTIES<br>
+	   Plot no 7 and 8, village Mirjapur peer baba road <br>
+	   Phone -8860684837</p>
+		</div>
+	   </div>
+	  
+	  <div style="width:100%; height:3px; background:url(img/TopThinLine.png) repeat-x; margin:0;"></div>
+	  <div class="row"  id="footer">
+	    <div class="col-sm-4">
+		  <ul style="list-style-type:none">
+		    <li><a href="index.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		  </ul>
+		</div>
+		
+		<div class="col-sm-4">
+		  <ul style="list-style-type:none">
+		    <li><a href="almirah.html">Almirah</a></li>
+			<li><a href="officefurniture.html">Office Furniture</a></li>
+			<li><a href="woodenfurniture.html">Wooden Furniture</a></li>
+			<li><a href="coolers.html">coolers</a></li>
+		  </ul>
+		</div>
+		
+		<div class="col-sm-4">
+		 <span class="glyphicon glyphicon-thumbs-up"></span> us on facebbok:<br>
+		 <a href="http://facebook.com/ashusteels" target="_blank">www.facebook.com/ashusteels</a>
+		</div>
+		</div>
+		
+	</div>
+  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>	
+    <script>    
+ 
+      function init_map() {
+        var var_location = new google.maps.LatLng(28.346366,77.330911);
+ 
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 14
+        };
+ 
+        var var_marker = new google.maps.Marker({
+            position: var_location,
+            map: var_map,
+            title:"Ashu Steel"});
+ 
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+ 
+        var_marker.setMap(var_map);    
+ 
+      }
+ 
+      google.maps.event.addDomListener(window, 'load', init_map);
+ 
+    </script>
+  </body>
+</html>
+
